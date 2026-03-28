@@ -1,0 +1,450 @@
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .main-body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .intro-body {
+        background-color: rgb(26, 220, 207);
+        height: 100%;
+        width: 100%;
+        border-bottom-left-radius: 200px;
+        border-bottom-right-radius: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(Girl-img.png);
+        background-repeat: no-repeat;
+        background-size: 28% 85%;
+        background-position: 85% 100%;
+        position: relative;
+    }
+
+    .header {
+        margin-top: 20px;
+        width: 86.77%;
+        height: 11%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(rgba(0, 255, 240, 1));
+        background-image: url(polygon.png);
+        background-repeat: no-repeat;
+
+    }
+
+    .header1 {
+        font-family: Poppins;
+        font-weight: 700;
+        font-size: 32px;
+        letter-spacing: 4%;
+        color: rgba(255, 255, 255, 1);
+        padding-left: 25px;
+    }
+
+    .header2 {
+        width: 41.23%;
+        height: 39.76%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-buttons {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 100%;
+        letter-spacing: 2%;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .header3 {
+        width: 20.86%;
+        height: 73.49%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .login {
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 80px;
+        border: none;
+        padding-left: 35px;
+        padding-right: 35px;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 2%;
+
+    }
+
+    .sign-up {
+        background-color: rgba(255, 255, 255, 0.3);
+        /* opacity: 50%; */
+        border-radius: 80px;
+        border: none;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 2%;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .header-body {
+        width: 35.62%;
+        height: 36.14%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 35%;
+        left: 10%;
+
+    }
+
+    .header-sub-body {
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url(play-button.png);
+        background-repeat: no-repeat;
+        background-position: 50% 30%;
+        background-size: 18% 230%;
+    }
+
+    .join-free-button {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 80px;
+        border: none;
+        padding: 12px 40px;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .verify-img {
+        position: absolute;
+        top: 60%;
+        right: 7%;
+    }
+
+    .info-sec {
+        height: 120%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .num-info {
+        width: 79.86%;
+        height: 16%;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        box-sizing: border-box;
+
+    }
+
+    .num {
+        font-family: Buenos Aires Trial;
+        font-weight: 300;
+        font-style: Light;
+        font-size: 76px;
+        /* line-height: 100%; */
+        letter-spacing: 0px;
+        color: rgba(19, 108, 181, 1);
+    }
+
+    .num2 {
+        color: rgba(73, 187, 189, 1);
+    }
+
+    .num-info-txt {
+        font-family: Buenos Aires Trial;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 25px;
+        letter-spacing: 0px;
+
+    }
+
+    .info-body {
+        width: 76.67%;
+        height: 68.06%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .info-body-txt1 {
+        font-family: Poppins;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 180%;
+        letter-spacing: 0%;
+        color: rgba(47, 50, 125, 1);
+    }
+
+    .info-body-txt2 {
+        width: 57.49%;
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 180%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: rgba(105, 105, 132, 1);
+    }
+
+    .info-box {
+        width: 100%;
+        height: 56.50%;
+        display: flex;
+        gap: 40px;
+        position: relative;
+        background-color: rgba(255, 255, 255, 1);
+        margin-top: 100px;
+    }
+
+    .info-box1 {
+        width: 30.91%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        justify-content: end;
+        gap: 20px;
+    }
+
+    .info-img1 {
+        position: absolute;
+        top: -18%;
+        height: 40%;
+        width: 10%;
+        left: 11%;
+    }
+
+    .info-img2 {
+        position: absolute;
+        top: -18%;
+        height: 40%;
+        width: 10%;
+        left: 45%;
+    }
+
+    .info-img3 {
+        position: absolute;
+        top: -18%;
+        height: 40%;
+        width: 10%;
+        left: 80%;
+    }
+
+    .info-box-txt1 {
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: rgba(47, 50, 125, 1);
+    }
+
+    .info-box-txt2 {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 180%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: rgba(105, 105, 132, 1);
+    }
+
+    .footer {
+        height: 53.04%;
+        width: 100%;
+        background-color: rgba(37, 38, 65, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer1 {
+        width: 20.21%;
+        height: 14%;
+        background-image: url(polygon.png);
+        background-repeat: no-repeat;
+        background-size: 22% 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+
+<body>
+    <div class="main-body">
+        <div class="intro-body">
+            <div class="header">
+                <p class="header1">TOTC</p>
+                <div class="header2">
+                    <p class="header-buttons">Home</p>
+                    <p class="header-buttons">Courses</p>
+                    <p class="header-buttons">Careers</p>
+                    <p class="header-buttons">Blog</p>
+                    <p class="header-buttons">About us</p>
+
+
+                </div>
+                <div class="header3">
+                    <button class="login">Login</button>
+                    <button class="sign-up">Sign up</button>
+
+                </div>
+            </div>
+            <div class="header-body">
+                <p
+                    style="font-family: Poppins;font-weight: 700;font-size: 45px;line-height: 130%;letter-spacing: 0%;color:  rgba(255, 255, 255, 1);">
+                    <span style="color: rgba(248, 127, 41, 0.847);">Studying </span>Online is now much easier
+                </p>
+                <p
+                    style="font-weight: 400;font-size: 24px;line-height: 120%;letter-spacing: 0%;color:  rgba(255, 255, 255, 1);">
+                    TOTC is an interesting platform that will teach you in more an interactive way</p>
+                <div class="header-sub-body">
+                    <button class="join-free-button">Join for free</button>
+                    <p
+                        style="font-family: Poppins;font-weight: 400;font-size: 24px;line-height: 100%;letter-spacing: 0%;">
+                        Watch how it works</p>
+                </div>
+            </div>
+            <div class="verify-img">
+                <img src="Verified-Symbol.png" alt="">
+            </div>
+        </div>
+        <div class="info-sec">
+            <div class="num-info">
+                <div style="display: flex; flex-direction: column;align-items: center;">
+                    <p class="num">15<span class="num2">K+</span></p>
+                    <p class="num-info-txt">Students</p>
+                </div>
+                <div style="display: flex; flex-direction: column;align-items: center;">
+                    <p class="num">75<span class="num2">%</span></p>
+                    <p class="num-info-txt">Total success</p>
+                </div>
+                <div style="display: flex; flex-direction: column;align-items: center;">
+                    <p class="num">3<span class="num2">5</span></p>
+                    <p class="num-info-txt">Main questions</p>
+                </div>
+                <div style="display: flex; flex-direction: column;align-items: center;">
+                    <p class="num">2<span class="num2">6</span></p>
+                    <p class="num-info-txt">Chief experts</p>
+                </div>
+                <div style="display: flex; flex-direction: column;align-items: center;">
+                    <p class="num">1<span class="num2">6</span></p>
+                    <p class="num-info-txt">Years of experience</p>
+                </div>
+            </div>
+            <div class="info-body">
+                <p class="info-body-txt1">All-In-One <span style="color: rgba(0, 203, 184, 1);">Cloud Software.</span>
+                </p>
+                <p class="info-body-txt2">TOTC is one powerful online software suite that combines all the tools needed
+                    to run a successful school or office.</p>
+                <div class="info-box">
+                    <div class="info-box1">
+                        <img class="info-img1" src="info-doc.png" alt="">
+                        <p class="info-box-txt1">Online Billing, Invoicing, & Contracts</p>
+                        <p class="info-box-txt2">Simple and secure control of your organization’s financial and legal
+                            transactions. Send customized invoices and contracts</p>
+                    </div>
+                    <div class="info-box1">
+                        <img class="info-img2" src="info-timetable.png" alt="">
+                        <p class="info-box-txt1">Easy Scheduling & Attendance Tracking</p>
+                        <p class="info-box-txt2">Schedule and reserve classrooms at one campus or multiple campuses.
+                            Keep detailed records of student attendance</p>
+
+                    </div>
+                    <div class="info-box1">
+                        <img class="info-img3" src="info-customer.png" alt="">
+                        <p class="info-box-txt1">Customer Tracking</p>
+                        <p class="info-box-txt2">Automate and track emails to individuals or groups. Skilline’s built-in
+                            system helps organize your organization</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer1">
+                <p style="padding-left: 20px;" class="header1">TOTC</p>
+                <p style="border-left: 1px solid  rgba(131, 131, 154, 1) ;"></p>
+
+                <p
+                    style="font-family: Poppins;font-weight: 600;font-size: 15px;letter-spacing: 4%;color: rgba(255, 255, 255, 1);width: 40%;">
+                    Virtual Classes for Zoom</p>
+            </div>
+            <div>
+                <p
+                    style="font-family: Poppins;font-weight: 500;font-size: 26px;line-height: 100%;letter-spacing: 4%;text-align: center;color: rgba(178, 179, 207, 1);">
+                    Subscribe to get our Newsletter</p>
+            </div>
+
+            <div
+                style="display: flex; justify-content: space-between; gap: 30px; width: 38%;">
+                <button
+                    style="border: 1px solid rgba(131, 131, 154, 1);background: none; color: rgba(131, 131, 154, 1) ; border-radius: 40px; padding: 20px; padding-right: 250px;
+                font-family: Poppins;font-weight: 400;font-size: 20px;line-height: 100%;letter-spacing: 4%;text-align: center;">Your
+                    Email</button>
+                <button
+                    style="color: rgba(255, 255, 255, 1); background-color: rgba(73, 187, 189, 1); padding: 20px; border-radius: 80px;
+                 font-family: Poppins;font-weight: 400;font-size: 20px;line-height: 100%;letter-spacing: 4%;text-align: center;">Subscribe</button>
+            </div>
+            <div style="display: flex; justify-content: space-evenly;font-family: Poppins; height: 5.56%;  justify-content: center;
+font-weight: 400;
+font-size: 20px;
+letter-spacing: 4%;
+text-align: center;
+color:  rgba(131, 131, 154, 1) ; gap: 20px;
+">
+                <p>Careers</p>
+                <p style="border-left: 0.5px solid  rgba(131, 131, 154, 1) ;"></p>
+                <p>Privacy Policy</p>
+                <p style="border-left: 0.5px solid  rgba(131, 131, 154, 1) ;"></p>
+
+                <p>Terms & Conditions</p>
+
+            </div>
+            <p style="font-family: Poppins;
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 4%;
+text-align: center;
+color:  rgba(131, 131, 154, 1) ;
+">© 2021 Class Technologies Inc.</p>
+        </div>
+       
+</body>
+
+</html>
